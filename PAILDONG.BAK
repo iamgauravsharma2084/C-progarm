@@ -1,0 +1,30 @@
+#include<conio.h>
+#include<stdio.h>
+#define start main
+start()
+{
+
+  int n;
+  int s=0;
+  int copy=0,total=0;
+  clrscr();
+  printf("Enter your number:-");
+  scanf("%d",&n);
+  copy=n;
+  while(n!=0)
+  {
+    s=n%10;
+    total=total*10+s;
+    n=n/10;
+  }
+
+  if(copy==total)
+  {
+   printf("Same number");
+  }
+  else
+  {
+   printf("Not Same number");
+  }
+  getch();
+}
